@@ -1,12 +1,9 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-// import * as fs from 'fs/promises'
 import {createWriteStream, promises as fs} from 'fs'
 import * as path from 'path'
 import {randomBytes} from 'crypto'
-
-const TARGET_DIR = path.join(process.env['HOME'] || '.', 'src', 'vscode-tracker', 'data')
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
